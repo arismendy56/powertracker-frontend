@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div style={{ fontFamily: "sans-serif", padding: "20px" }}>
-      <h1>API Data</h1>
+      <h1>API Data Test updated text</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
   );

@@ -1,5 +1,10 @@
+
 const Blocks = () => {
-    return <div>Blocks Component</div>;
+    return(
+         <div>
+            <h1>Blocks</h1>
+        </div>
+    );
 }
 
 export default Blocks;

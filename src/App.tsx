@@ -3,21 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from './components/dashboard/Dashboard';
 import History from './components/history/History';
 import Navbar from './components/navbar/NavBar';
-import { Container } from '@mui/material';
+import { Box, Container, Toolbar } from '@mui/material';
 import Blocks from './components/blocks/Blocks';
 function App() {
   return (
-    <Container>
+    <Container maxWidth="md">
     <Router>
       <Navbar />
-      <div className="page-content">
+      <Box >
+        <Toolbar />
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/history" element={<History />} />
           <Route path="/blocks" element={<Blocks />} />
           <Route path="*" element={<Dashboard />} /> {/* Default route */}
         </Routes>
-      </div>
+      </Box>
     </Router>
     </Container>
   );
